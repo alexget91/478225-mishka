@@ -7,116 +7,121 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+      <a href="#" class="page-header__logo logo">
+        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">Корзина: <span class="site-list__count">пока пуста</span></a>
-            </li>
-          </ul>
+        <div class="main-nav__content site-menu">
+          <div class="site-menu__item">
+            <a href="#" class="site-menu__text">Каталог товаров</a>
+          </div>
+          <div class="site-menu__item">
+            <a href="#" class="site-menu__text">Вязание на заказ</a>
+          </div>
+          <div class="site-menu__item site-menu__item--search">
+            <a href="#" class="site-menu__text">Поиск по сайту</a>
+          </div>
+          <div class="site-menu__item site-menu__item--basket">
+            <a href="#" class="site-menu__text">Корзина: <span class="site-menu__count">пока пуста</span></a>
+          </div>
         </div>
       </nav>
     </header>
 
     <main class="page-main">
 
-      <header class="page-main__header page-main__header">
-        <h1 class="page-main__title">Каталог товаров</h1>
-      </header>
+      <h1 class="page-main-title">Каталог товаров</h1>
       <section class="catalog">
         <article class="catalog__item catalog-element">
-          <a href="#" class="catalog-element__image-link">
-            <img class="catalog-element__image" src="http://placehold.it/260x195" width="260" height="195">
+          <a href="#" class="catalog-element__img-wrapper">
+            <img class="catalog-element__img" src="http://placehold.it/260x195" width="260" height="195">
           </a>
-          <a href="#" class="catalog-element__title-link">Зайчик-попрыгайчик</a>
+          <h2 class="catalog-element__title">
+            <a href="#" class="catalog-element__title-link">Зайчик-попрыгайчик</a>
+          </h2>
           <p class="catalog-element__options">Рост 30 см, вес 200 г</p>
-          <footer class="catalog-element__footer">
+          <div class="catalog-element__footer">
             <b class="catalog-element__price">1 200 руб.</b>
-            <a href="#" class="catalog-element__basket-link"></a>
-          </footer>
+            <a href="#" class="catalog-element__basket-link">Купить</a>
+          </div>
         </article>
         <article class="catalog__item catalog-element">
-          <a href="#" class="catalog-element__image-link">
-            <img class="catalog-element__image" src="http://placehold.it/260x195" width="260" height="195">
+          <a href="#" class="catalog-element__img-wrapper">
+            <img class="catalog-element__img" src="http://placehold.it/260x195" width="260" height="195">
           </a>
-          <a href="#" class="catalog-element__title-link">Корзинка для белья</a>
+          <h2 class="catalog-element__title">
+            <a href="#" class="catalog-element__title-link">Корзинка для белья</a>
+          </h2>
           <p class="catalog-element__options">Диаметр 15 см, высота 10 см</p>
-          <footer class="catalog-element__footer">
+          <div class="catalog-element__footer">
             <b class="catalog-element__price">690 руб.</b>
-            <a href="#" class="catalog-element__basket-link"></a>
-          </footer>
+            <a href="#" class="catalog-element__basket-link">Купить</a>
+          </div>
         </article>
         <article class="catalog__item catalog-element">
-          <a href="#" class="catalog-element__image-link">
-            <img class="catalog-element__image" src="http://placehold.it/260x195" width="260" height="195">
+          <a href="#" class="catalog-element__img-wrapper">
+            <img class="catalog-element__img" src="http://placehold.it/260x195" width="260" height="195">
           </a>
-          <a href="#" class="catalog-element__title-link">Большая корзинка для игрушек</a>
+          <h2 class="catalog-element__title">
+            <a href="#" class="catalog-element__title-link">Большая корзинка для игрушек</a>
+          </h2>
           <p class="catalog-element__options">Диаметр 30 см, высота 30 см</p>
-          <footer class="catalog-element__footer">
+          <div class="catalog-element__footer">
             <b class="catalog-element__price">1 500 руб.</b>
-            <a href="#" class="catalog-element__basket-link"></a>
-          </footer>
+            <a href="#" class="catalog-element__basket-link">Купить</a>
+          </div>
         </article>
       </section>
       <section class="video">
         <h2 class="video__title">Процесс производства</h2>
         <video class="video__item" width="260" height="150" poster="http://placehold.it/260x150"></video>
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="reviews__write button">Сделать заказ</a>
+        <a href="#" class="video__btn btn">Сделать заказ</a>
       </section>
 
       <section class="basket-add popup">
         <h2 class="basket-add__title">Добавить в корзину</h2>
-        <form class="basket-add__form" action="https://echo.htmlacademy.ru">
+        <form class="basket-add__form" name="basket_add" action="https://echo.htmlacademy.ru" method="post">
           <p class="basket-add__text">Выберите размер:</p>
           <div class="basket-add__list">
-            <label class="basket-add__item basket-add__item--active">
-              <input class="basket-add__radio" type="radio" name="basket_size" value="S">S
-            </label>
-            <label class="basket-add__item">
-              <input class="basket-add__radio" type="radio" name="basket_size" value="M">M
-            </label>
-            <label class="basket-add__item">
-              <input class="basket-add__radio" type="radio" name="basket_size" value="L">L
-            </label>
+            <input class="basket-add__radio" type="radio" name="size" value="S" id="size-s" checked>
+            <label class="basket-add__item" for="size-s">S</label>
+            <input class="basket-add__radio" type="radio" name="size" value="M" id="size-m">
+            <label class="basket-add__item" for="size-m">M</label>
+            <input class="basket-add__radio" type="radio" name="size" value="L" id="size-l">
+            <label class="basket-add__item" for="size-l">L</label>
           </div>
-          <input type="submit" class="basket-add__link button button--turquoise" value="Добавить">
+          <input type="submit" class="basket-add__link btn btn--turquoise" value="Добавить">
+        </form>
+      </section>
+
+      <section class="search popup">
+        <h2 class="search__title">Поиск</h2>
+        <form class="search__form" name="search" action="https://echo.htmlacademy.ru" method="get">
+          <input class="form__textinput" type="text" name="text">
+          <input type="submit" class="search__link btn" value="Найти">
         </form>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <section class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </section>
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--instagram" href="#">Мы в Инстаграме</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#">Мы в Твиттере</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <div class="copyright__text">Разработано</div>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </footer>
 
   </body>
