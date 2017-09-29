@@ -41,10 +41,10 @@
   padding: 0;
   font-size: 0;
   cursor: pointer;
-  background: url('../img/icon-left-arrow.svg') center center no-repeat;
+  background: url("../img/icon-left-arrow.svg") center center no-repeat;
   border: 1px solid $border-color;
 }
 
 .reviews__btn--next {
-  background-image: url('../img/icon-right-arrow.svg');
+  background-image: url("../img/icon-right-arrow.svg");
 }
