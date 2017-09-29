@@ -1,10 +1,11 @@
 .catalog-nav__link {
   display: block;
   height: 103px;
-  @include padding-horizontal;
   font: 19px/24px $font-bold;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
+
+  @include padding-horizontal;
 }
 
 .catalog-nav__link--interior {

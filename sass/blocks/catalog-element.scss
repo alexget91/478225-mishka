@@ -9,8 +9,9 @@
 
 .catalog-element__title {
   margin: 23px 0 4px 0;
-  @include padding-horizontal(25px, 25px);
   font: 17px/24px $font-bold;
+
+  @include padding-horizontal(25px, 25px);
 }
 
 .catalog-element__title-link {
@@ -20,9 +21,10 @@
 
 .catalog-element__desc {
   margin: 0 0 10px 0;
-  @include padding-horizontal(25px, 25px);
   font-size: 13px;
   line-height: 30px;
+
+  @include padding-horizontal(25px, 25px);
 }
 
 .catalog-element__options {
@@ -42,5 +44,5 @@
   height: 19px;
   font-size: 0;
   text-decoration: none;
-  background: url(../img/icon-cart.svg) center center no-repeat;
+  background: url('../img/icon-cart.svg') center center no-repeat;
 }

@@ -1,6 +1,7 @@
 .catalog {
-  @include padding-horizontal;
   padding-top: 30px;
+
+  @include padding-horizontal;
 }
 
 .catalog__item {

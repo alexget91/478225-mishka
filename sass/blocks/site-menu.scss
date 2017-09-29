@@ -4,17 +4,20 @@
 
 .site-menu__item {
   height: 78px;
-  @include padding-horizontal;
   border-bottom: 1px solid $border-color;
+
+  @include padding-horizontal;
 }
 
 .site-menu__text {
   font: 17px/24px $font-bold;
   color: $heading-color;
   text-decoration: none;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:focus {
     opacity: 0.3;
   }

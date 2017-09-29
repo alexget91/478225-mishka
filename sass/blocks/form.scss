@@ -1,11 +1,9 @@
 .form__fieldset {
-  border: none;
-  border-top: 1px solid $highlighted-color;
-}
-
-.form__fieldset {
   margin: 30px 0 0 0;
   padding: 22px 0 0 0;
+  border: none;
+  border-top: 1px solid $highlighted-color;
+
   &:first-child {
     margin-top: 0;
   }

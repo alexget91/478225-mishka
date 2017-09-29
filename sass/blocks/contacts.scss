@@ -22,10 +22,12 @@
   color: $text-color;
   text-decoration: none;
   border-bottom: 1px solid $highlighted-color;
+
   &:hover {
     color: $link-hover-color;
     border-color: $link-hover-color;
   }
+
   &:focus {
     opacity: 0.3;
     color: $link-hover-color;
