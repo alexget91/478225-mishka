@@ -1,0 +1,8 @@
+.page-footer {
+  @include padding-horizontal;
+  background-color: $background-color;
+}
+
+.page-footer__copyright {
+  border-top: 1px solid #e5e5e5;
+}

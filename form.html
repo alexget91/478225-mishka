@@ -2,17 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Мишка: форма</title>
   </head>
   <body>
 
     <header class="page-header">
       <a href="#" class="page-header__logo logo">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__content site-menu">
+        <div class="main-nav__content site-menu no-display">
           <div class="site-menu__item">
             <a href="#" class="site-menu__text">Каталог товаров</a>
           </div>
@@ -39,52 +40,52 @@
             <legend class="form__legend">Тип</legend>
             <div class="form__group">
               <input type="radio" class="form__radio" name="type" value="interior" id="type-interior" checked>
-              <label for="type-interior">Аксессуар для интерьера</label>
+              <label class="form__label" for="type-interior">Аксессуар для интерьера</label>
             </div>
             <div class="form__group">
               <input type="radio" class="form__radio" name="type" value="toy" id="type-toy">
-              <label for="type-toy">Детская игрушка</label>
+              <label class="form__label" for="type-toy">Детская игрушка</label>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Цвет</legend>
             <div class="form__group">
               <input type="checkbox" class="form__checkbox" name="color[]" value="white" id="color-white" checked>
-              <label for="color-white">Белый</label>
+              <label class="form__label" for="color-white">Белый</label>
             </div>
             <div class="form__group">
               <input type="checkbox" class="form__checkbox" name="color[]" value="gray" id="color-gray" checked>
-              <label for="color-gray">Серый</label>
+              <label class="form__label" for="color-gray">Серый</label>
             </div>
             <div class="form__group">
               <input type="checkbox" class="form__checkbox" name="color[]" value="tiffany" id="color-tiffany">
-              <label for="color-tiffany">&laquo;Тиффани&raquo;</label>
+              <label class="form__label" for="color-tiffany">&laquo;Тиффани&raquo;</label>
             </div>
             <div class="form__group">
               <input type="checkbox" class="form__checkbox" name="color[]" value="black" id="color-black">
-              <label for="color-black">Черный</label>
+              <label class="form__label" for="color-black">Черный</label>
             </div>
             <div class="form__group">
               <input type="checkbox" class="form__checkbox" name="color[]" value="pink" id="color-pink">
-              <label for="color-pink">Розовый</label>
+              <label class="form__label" for="color-pink">Розовый</label>
             </div>
             <div class="form__group">
               <input type="checkbox" class="form__checkbox" name="color[]" value="orange" id="color-orange">
-              <label for="color-orange">Оранжевый</label>
+              <label class="form__label" for="color-orange">Оранжевый</label>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">ФИО</legend>
             <div class="form__group">
-              <label for="firstname" class="form__label">Имя:</label>
+              <label class="form__label" for="firstname">Имя:</label>
               <input class="form__field" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя*" required>
             </div>
             <div class="form__group">
-              <label for="surname" class="form__label">Фамилия:</label>
+              <label class="form__label" for="surname">Фамилия:</label>
               <input class="form__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
             </div>
             <div class="form__group">
-              <label for="secondname" class="form__label">Отчество:</label>
+              <label class="form__label" for="secondname">Отчество:</label>
               <input class="form__field" type="text" name="secondname" id="secondname" placeholder="Отчество, если желаете">
             </div>
           </fieldset>

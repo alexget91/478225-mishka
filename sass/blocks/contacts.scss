@@ -1,0 +1,42 @@
+.contacts {
+  padding-top: 35px;
+  padding-bottom: 39px;
+}
+
+.contacts__content {
+  @include padding-horizontal;
+}
+
+.contacts__title {
+  margin: 0;
+  font: 18px/30px $font-bold;
+  color: $heading-color;
+}
+
+.contacts__item {
+  line-height: 30px;
+}
+
+.contacts__email {
+  display: inline-block;
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px solid $highlighted-color;
+  &:hover {
+    color: $link-hover-color;
+    border-color: $link-hover-color;
+  }
+  &:focus {
+    opacity: 0.3;
+    color: $link-hover-color;
+    border-color: $link-hover-color;
+  }
+}
+
+.contacts__map {
+  margin-bottom: 40px;
+}
+
+.contacts__write {
+  margin: 0 $padding-base;
+}

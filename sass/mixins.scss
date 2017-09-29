@@ -1,0 +1,10 @@
+@mixin padding-horizontal ($left: $padding-base, $right: $padding-base) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin ul-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

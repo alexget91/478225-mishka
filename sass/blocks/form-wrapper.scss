@@ -1,0 +1,11 @@
+.form-wrapper {
+  @include padding-horizontal;
+  padding-top: 22px;
+  padding-bottom: 55px;
+}
+
+.form-wrapper__text {
+  margin: 0 0 24px 0;
+  font-size: 13px;
+  line-height: 24px;
+}

@@ -1,0 +1,14 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table__cell {
+  padding: 0 10px 0 0;
+  vertical-align: middle;
+  border-bottom: 1px solid $border-color;
+}
+
+.table__cell--featured {
+  height: 39px;
+  line-height: 20px;
+}

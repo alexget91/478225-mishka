@@ -1,0 +1,16 @@
+.catalog-nav__link {
+  display: block;
+  height: 103px;
+  @include padding-horizontal;
+  font: 19px/24px $font-bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.catalog-nav__link--interior {
+  background: $highlighted-color;
+}
+
+.catalog-nav__link--toys {
+  background: $link-color;
+}

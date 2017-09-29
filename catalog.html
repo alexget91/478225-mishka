@@ -2,17 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Мишка: каталог</title>
   </head>
   <body>
 
     <header class="page-header">
       <a href="#" class="page-header__logo logo">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__content site-menu">
+        <div class="main-nav__content site-menu no-display">
           <div class="site-menu__item">
             <a href="#" class="site-menu__text">Каталог товаров</a>
           </div>
@@ -35,39 +36,39 @@
       <section class="catalog">
         <article class="catalog__item catalog-element">
           <a href="#" class="catalog-element__img-wrapper">
-            <img class="catalog-element__img" src="http://placehold.it/260x195" width="260" height="195">
+            <img class="catalog-element__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195">
           </a>
           <h2 class="catalog-element__title">
             <a href="#" class="catalog-element__title-link">Зайчик-попрыгайчик</a>
           </h2>
-          <p class="catalog-element__options">Рост 30 см, вес 200 г</p>
-          <div class="catalog-element__footer">
+          <p class="catalog-element__desc">Рост 30 см, вес 200 г</p>
+          <div class="catalog-element__options">
             <b class="catalog-element__price">1 200 руб.</b>
             <a href="#" class="catalog-element__basket-link">Купить</a>
           </div>
         </article>
         <article class="catalog__item catalog-element">
           <a href="#" class="catalog-element__img-wrapper">
-            <img class="catalog-element__img" src="http://placehold.it/260x195" width="260" height="195">
+            <img class="catalog-element__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195">
           </a>
           <h2 class="catalog-element__title">
             <a href="#" class="catalog-element__title-link">Корзинка для белья</a>
           </h2>
-          <p class="catalog-element__options">Диаметр 15 см, высота 10 см</p>
-          <div class="catalog-element__footer">
+          <p class="catalog-element__desc">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-element__options">
             <b class="catalog-element__price">690 руб.</b>
             <a href="#" class="catalog-element__basket-link">Купить</a>
           </div>
         </article>
         <article class="catalog__item catalog-element">
           <a href="#" class="catalog-element__img-wrapper">
-            <img class="catalog-element__img" src="http://placehold.it/260x195" width="260" height="195">
+            <img class="catalog-element__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195">
           </a>
           <h2 class="catalog-element__title">
             <a href="#" class="catalog-element__title-link">Большая корзинка для игрушек</a>
           </h2>
-          <p class="catalog-element__options">Диаметр 30 см, высота 30 см</p>
-          <div class="catalog-element__footer">
+          <p class="catalog-element__desc">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-element__options">
             <b class="catalog-element__price">1 500 руб.</b>
             <a href="#" class="catalog-element__basket-link">Купить</a>
           </div>
@@ -75,16 +76,16 @@
       </section>
       <section class="video">
         <h2 class="video__title">Процесс производства</h2>
-        <video class="video__item" width="260" height="150" poster="http://placehold.it/260x150"></video>
+        <video class="video__item" width="260" height="150" poster="img/video-mobile@1x.jpg"></video>
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="video__btn btn">Сделать заказ</a>
       </section>
 
       <section class="basket-add popup">
-        <h2 class="basket-add__title">Добавить в корзину</h2>
+        <h2 class="basket-add__title popup__title heading">Добавить в корзину</h2>
         <form class="basket-add__form" name="basket_add" action="https://echo.htmlacademy.ru" method="post">
           <p class="basket-add__text">Выберите размер:</p>
-          <div class="basket-add__list">
+          <div class="basket-add__options">
             <input class="basket-add__radio" type="radio" name="size" value="S" id="size-s" checked>
             <label class="basket-add__item" for="size-s">S</label>
             <input class="basket-add__radio" type="radio" name="size" value="M" id="size-m">
@@ -92,7 +93,7 @@
             <input class="basket-add__radio" type="radio" name="size" value="L" id="size-l">
             <label class="basket-add__item" for="size-l">L</label>
           </div>
-          <input type="submit" class="basket-add__link btn btn--turquoise" value="Добавить">
+          <input type="submit" class="basket-add__link btn btn--submit btn--highlighted" value="Добавить">
         </form>
       </section>
 

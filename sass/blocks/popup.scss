@@ -1,0 +1,11 @@
+.popup {
+  padding-top: 30px;
+  padding-bottom: 46px;
+  @include padding-horizontal;
+  border: 1px solid #c7c7c7;
+}
+
+.popup__title {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}

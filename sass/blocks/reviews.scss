@@ -1,0 +1,49 @@
+.reviews {
+  padding-top: 25px;
+  padding-bottom: 45px;
+  @include padding-horizontal;
+}
+
+.reviews__title {
+  margin: 0 0 16px 0;
+}
+
+.reviews__item {
+  margin: 0 0 29px 0;
+}
+
+.reviews__text {
+  margin: 0 0 25px 0;
+  line-height: 30px;
+}
+
+.reviews__name {
+  display: inline-block;
+  margin-bottom: 2px;
+  font: 17px/24px $font-bold;
+  color: $heading-color;
+}
+
+.reviews__link {
+  font: 17px/30px $font;
+  color: $heading-color;
+  text-decoration: none;
+}
+
+.reviews__controls {
+  margin-bottom: 38px;
+}
+
+.reviews__btn {
+  min-width: 120px;
+  height: 50px;
+  padding: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: url(../img/icon-left-arrow.svg) center center no-repeat;
+  border: 1px solid $border-color;
+}
+
+.reviews__btn--next {
+  background-image: url(../img/icon-right-arrow.svg);
+}
