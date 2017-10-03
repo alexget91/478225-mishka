@@ -1,32 +1,32 @@
 .reviews {
-  padding-top: 25px;
-  padding-bottom: 45px;
-
-  @include padding-horizontal;
+  padding: 25px $padding-side-base 45px;
 }
 
 .reviews__title {
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
 }
 
 .reviews__item {
-  margin: 0 0 29px 0;
+  margin: 0 0 29px;
 }
 
 .reviews__text {
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
   line-height: 30px;
 }
 
 .reviews__name {
   display: inline-block;
   margin-bottom: 2px;
-  font: 17px/24px $font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
   color: $heading-color;
 }
 
 .reviews__link {
-  font: 17px/30px $font;
+  font-size: 17px;
+  line-height: 30px;
   color: $heading-color;
   text-decoration: none;
 }
@@ -43,8 +43,8 @@
   cursor: pointer;
   background: url("../img/icon-left-arrow.svg") center center no-repeat;
   border: 1px solid $border-color;
-}
 
-.reviews__btn--next {
-  background-image: url("../img/icon-right-arrow.svg");
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+  }
 }

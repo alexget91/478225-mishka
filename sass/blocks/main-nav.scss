@@ -5,8 +5,8 @@
   background: url("../img/icon-menu-open.svg") center center no-repeat;
   border: none;
   cursor: pointer;
-}
 
-.main-nav__toggle--close {
-  background-image: url("../img/icon-menu-close.svg");
+  &--close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
 }

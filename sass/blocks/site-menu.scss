@@ -4,13 +4,14 @@
 
 .site-menu__item {
   height: 78px;
+  padding: 0 $padding-side-base;
   border-bottom: 1px solid $border-color;
-
-  @include padding-horizontal;
 }
 
 .site-menu__text {
-  font: 17px/24px $font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
   color: $heading-color;
   text-decoration: none;
 

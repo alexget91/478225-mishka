@@ -1,6 +1,6 @@
 .form__fieldset {
-  margin: 30px 0 0 0;
-  padding: 22px 0 0 0;
+  margin: 30px 0 0;
+  padding: 22px 0 0;
   border: none;
   border-top: 1px solid $highlighted-color;
 
@@ -11,23 +11,29 @@
 
 .form__legend {
   padding: 0 27px 0 0;
-  font: 17px/16px $font-bold;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
   color: $highlighted-color;
   text-transform: uppercase;
 }
 
 .form__label {
   display: inline-block;
-  font: 17px/18px $font-bold;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
   color: $heading-color;
+  vertical-align: top;
 }
 
 .form__field {
-  font: 17px/18px $font;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .form__hint {
-  margin: 15px 0 0 0;
+  margin: 15px 0 0;
   font-size: 14px;
   line-height: 16px;
 }

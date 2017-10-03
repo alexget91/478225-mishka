@@ -4,12 +4,14 @@
 }
 
 .contacts__content {
-  @include padding-horizontal;
+  padding: 0 $padding-side-base;
 }
 
 .contacts__title {
   margin: 0;
-  font: 18px/30px $font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
   color: $heading-color;
 }
 
@@ -21,6 +23,7 @@
   display: inline-block;
   color: $text-color;
   text-decoration: none;
+  vertical-align: top;
   border-bottom: 1px solid $highlighted-color;
 
   &:hover {
@@ -40,5 +43,5 @@
 }
 
 .contacts__write {
-  margin: 0 $padding-base;
+  margin: 0 $padding-side-base;
 }

@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  font-family: $font;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   color: $text-color;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.no-display {
+  display: none;
 }

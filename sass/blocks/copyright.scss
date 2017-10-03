@@ -1,5 +1,7 @@
 .copyright__text {
-  font: 19px/18px $font-bold;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
   color: $heading-color;
 }
 
@@ -9,5 +11,6 @@
   height: 34px;
   font-size: 0;
   text-decoration: none;
+  vertical-align: top;
   background: url("../img/logo-htmlacademy.svg") center center no-repeat;
 }

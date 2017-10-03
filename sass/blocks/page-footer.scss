@@ -1,5 +1,5 @@
 .page-footer {
-  @include padding-horizontal;
+  padding: 0 $padding-side-base;
   background-color: $background-color;
 }
 

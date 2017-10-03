@@ -1,17 +1,18 @@
 .catalog-nav__link {
   display: block;
   height: 103px;
-  font: 19px/24px $font-bold;
+  padding: 0 $padding-side-base;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
   color: #ffffff;
   text-decoration: none;
 
-  @include padding-horizontal;
-}
+  &--interior {
+    background: $highlighted-color;
+  }
 
-.catalog-nav__link--interior {
-  background: $highlighted-color;
-}
-
-.catalog-nav__link--toys {
-  background: $link-color;
+  &--toys {
+    background: $link-color;
+  }
 }

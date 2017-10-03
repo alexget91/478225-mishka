@@ -9,16 +9,16 @@
   font-size: 0;
   text-decoration: none;
   background: center center no-repeat;
-}
 
-.social-list__link--instagram {
-  background-image: url("../img/icon-insta.svg");
-}
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
 
-.social-list__link--facebook {
-  background-image: url("../img/icon-fb.svg");
-}
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
 
-.social-list__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
 }

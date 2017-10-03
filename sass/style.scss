@@ -1,41 +1,27 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@import "variables.scss";
-@import "mixins.scss";
-@import "scaffolding.scss";
-@import "blocks/no-display.scss";
-@import "blocks/heading.scss";
-@import "blocks/table.scss";
-@import "blocks/btn.scss";
-@import "blocks/popup.scss";
-@import "blocks/page-header.scss";
-@import "blocks/logo.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/site-menu.scss";
-@import "blocks/page-main-title.scss";
-@import "blocks/catalog-nav.scss";
-@import "blocks/featured.scss";
-@import "blocks/about.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/basket-add.scss";
-@import "blocks/catalog.scss";
-@import "blocks/catalog-element.scss";
-@import "blocks/video.scss";
-@import "blocks/form-wrapper.scss";
-@import "blocks/form.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/social-list.scss";
-@import "blocks/copyright.scss";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "scaffolding";
+@import "blocks/heading";
+@import "blocks/table";
+@import "blocks/btn";
+@import "blocks/popup";
+@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/site-menu";
+@import "blocks/page-main-title";
+@import "blocks/catalog-nav";
+@import "blocks/featured";
+@import "blocks/about";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/basket-add";
+@import "blocks/catalog";
+@import "blocks/catalog-element";
+@import "blocks/video";
+@import "blocks/form-wrapper";
+@import "blocks/form";
+@import "blocks/page-footer";
+@import "blocks/social-list";
+@import "blocks/copyright";

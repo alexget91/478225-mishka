@@ -7,11 +7,17 @@
   height: 195px;
 }
 
-.catalog-element__title {
-  margin: 23px 0 4px 0;
-  font: 17px/24px $font-bold;
+.catalog-element__img {
+  max-width: 100%;
+  height: auto;
+}
 
-  @include padding-horizontal(25px, 25px);
+.catalog-element__title {
+  margin: 23px 0 4px;
+  padding: 0 25px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .catalog-element__title-link {
@@ -20,11 +26,10 @@
 }
 
 .catalog-element__desc {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
+  padding: 0 25px;
   font-size: 13px;
   line-height: 30px;
-
-  @include padding-horizontal(25px, 25px);
 }
 
 .catalog-element__options {
@@ -34,7 +39,9 @@
 }
 
 .catalog-element__price {
-  font: 15px/24px $font-bold;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
   color: $heading-color;
 }
 

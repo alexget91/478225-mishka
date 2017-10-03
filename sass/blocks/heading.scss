@@ -1,4 +1,6 @@
 .heading {
-  font: 25px/30px $font-bold;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
   color: $heading-color;
 }
