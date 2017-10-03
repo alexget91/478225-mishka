@@ -1,0 +1,43 @@
+.form__fieldset {
+  margin: 30px 0 0;
+  padding: 22px 0 0;
+  border: none;
+  border-top: 1px solid $highlighted-color;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.form__legend {
+  padding: 0 27px 0 0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $highlighted-color;
+  text-transform: uppercase;
+}
+
+.form__label {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $heading-color;
+  vertical-align: top;
+}
+
+.form__field {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.form__hint {
+  margin: 15px 0 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__submit {
+  margin-top: 30px;
+}

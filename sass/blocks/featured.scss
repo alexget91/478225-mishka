@@ -1,0 +1,59 @@
+.featured {
+  padding: 27px $padding-side-base 35px;
+}
+
+.featured__header {
+  margin-bottom: 23px;
+}
+
+.featured__title {
+  margin: 0 0 2px;
+}
+
+.featured__label {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $highlighted-color;
+}
+
+.featured__text {
+  line-height: 24px;
+}
+
+.featured__text p {
+  margin: 10px 0 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.featured__options {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.featured__parameter {
+  min-width: 87px;
+}
+
+.featured__item {
+  display: block;
+  width: 260px;
+  height: 315px;
+  margin: 28px auto 0;
+}
+
+.featured__image {
+  width: 100%;
+  height: auto;
+}
+
+.featured__price {
+  margin: 23px 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}

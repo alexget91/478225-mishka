@@ -1,0 +1,11 @@
+.catalog {
+  padding: 30px $padding-side-base 0;
+}
+
+.catalog__item {
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

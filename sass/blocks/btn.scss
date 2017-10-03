@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  padding: 0;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top;
+  background: #ffffff;
+  border: 2px solid $text-color;
+
+  &--submit {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &--highlighted {
+    color: #ffffff;
+    background: $highlighted-color;
+    border: none;
+  }
+}

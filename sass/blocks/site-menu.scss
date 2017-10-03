@@ -1,0 +1,25 @@
+.site-menu {
+  background: #ffffff;
+}
+
+.site-menu__item {
+  height: 78px;
+  padding: 0 $padding-side-base;
+  border-bottom: 1px solid $border-color;
+}
+
+.site-menu__text {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $heading-color;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}

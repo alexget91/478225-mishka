@@ -1,0 +1,16 @@
+.page-main-title {
+  height: 176px;
+  margin: 0;
+  padding: 0 $padding-side-base;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $heading-color;
+  text-align: center;
+  background-color: $background-color;
+
+  &--index {
+    height: 282px;
+    background: #fafafa url("../img/hero-mobile@1x.jpg") center -20px no-repeat;
+  }
+}

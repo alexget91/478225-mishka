@@ -1,0 +1,24 @@
+.social-list {
+  @include ul-reset;
+}
+
+.social-list__link {
+  display: block;
+  width: 24px;
+  height: 29px;
+  font-size: 0;
+  text-decoration: none;
+  background: center center no-repeat;
+
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+}

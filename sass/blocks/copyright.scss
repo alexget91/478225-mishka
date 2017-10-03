@@ -1,0 +1,16 @@
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $heading-color;
+}
+
+.copyright__link {
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+  text-decoration: none;
+  vertical-align: top;
+  background: url("../img/logo-htmlacademy.svg") center center no-repeat;
+}
