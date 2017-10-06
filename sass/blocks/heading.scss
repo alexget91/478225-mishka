@@ -1,6 +1,23 @@
 .heading {
+  margin-left: -1px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   color: $heading-color;
+}
+
+@media (min-width: $width-tablet) {
+  .heading {
+    margin-left: -3px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .heading {
+    margin-left: -4px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

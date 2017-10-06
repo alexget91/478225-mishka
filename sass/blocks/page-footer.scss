@@ -1,8 +1,35 @@
 .page-footer {
-  padding: 0 $padding-side-base;
   background-color: $background-color;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  height: 80px;
+}
+
 .page-footer__copyright {
+  height: 80px;
   border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: $width-tablet) {
+  .page-footer__wrapper {
+    display: flex;
+    height: 143px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    width: 200px;
+  }
+
+  .page-footer__copyright {
+    width: 200px;
+    border-top: none;
+  }
 }

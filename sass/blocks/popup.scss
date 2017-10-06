@@ -1,4 +1,6 @@
 .popup {
+  width: $content-width-base - 2px;
+  margin: 0 auto;
   padding: 30px $padding-side-base 46px;
   border: 1px solid #c7c7c7;
 }
@@ -6,4 +8,17 @@
 .popup__title {
   margin: 0 0 10px;
   text-transform: uppercase;
+}
+
+@media (min-width: $width-tablet) {
+  .popup {
+    width: 355px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .popup__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }

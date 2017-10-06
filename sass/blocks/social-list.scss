@@ -1,11 +1,16 @@
 .social-list {
   @include ul-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-list__link {
   display: block;
   width: 24px;
   height: 29px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 0;
   text-decoration: none;
   background: center center no-repeat;
