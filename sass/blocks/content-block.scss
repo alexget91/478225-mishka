@@ -1,0 +1,7 @@
+.content-block {
+  border-top: 2px solid $background-color;
+
+  &--top {
+    border-top: none;
+  }
+}

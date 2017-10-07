@@ -1,0 +1,21 @@
+.content-wrapper {
+  width: $content-width-base;
+  margin: 0 auto;
+}
+
+@media (min-width: $width-tablet) {
+  .content-wrapper {
+    width: $content-width-tablet;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .content-wrapper {
+    width: $content-width-desktop;
+
+    &--index {
+      box-sizing: border-box;
+      padding-left: $padding-inner-desktop;
+    }
+  }
+}

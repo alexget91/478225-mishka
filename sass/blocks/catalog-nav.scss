@@ -16,3 +16,21 @@
     background: $link-color;
   }
 }
+
+@media (max-width: $width-tablet) {
+  .catalog-nav {
+    width: $width-base;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .catalog-nav {
+    display: flex;
+    margin: -120px auto 0;
+  }
+
+  .catalog-nav__link {
+    width: 50%;
+    height: 120px;
+  }
+}

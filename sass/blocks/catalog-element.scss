@@ -1,7 +1,3 @@
-.catalog-element {
-  border: 1px solid $border-color;
-}
-
 .catalog-element__img-wrapper {
   display: block;
   height: 195px;
@@ -10,6 +6,10 @@
 .catalog-element__img {
   max-width: 100%;
   height: auto;
+}
+
+.catalog-element__content {
+  border: 1px solid $border-color;
 }
 
 .catalog-element__title {
@@ -33,6 +33,8 @@
 }
 
 .catalog-element__options {
+  display: flex;
+  align-items: center;
   height: 72px;
   margin: 0 25px;
   border-top: 1px solid $border-color;
@@ -49,7 +51,44 @@
   display: block;
   width: 21px;
   height: 19px;
+  margin-left: auto;
   font-size: 0;
   text-decoration: none;
   background: url("../img/icon-cart.svg") center center no-repeat;
+}
+
+@media (min-width: $width-tablet) {
+  .catalog-element {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog-element__img-wrapper {
+    height: 334px;
+  }
+
+  .catalog-element__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-element__options {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog-element {
+    display: block;
+  }
+
+  .catalog-element__img-wrapper {
+    width: 100%;
+    height: 462px;
+  }
+
+  .catalog-element__content {
+    height: 195px;
+  }
 }
