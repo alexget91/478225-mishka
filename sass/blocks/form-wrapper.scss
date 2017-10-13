@@ -8,3 +8,22 @@
   font-size: 13px;
   line-height: 24px;
 }
+
+@media (min-width: $width-tablet) {
+  .form-wrapper {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+
+  .form-wrapper__text {
+    margin-bottom: 8px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .form-wrapper {
+    padding-top: 136px;
+  }
+}

@@ -9,3 +9,10 @@ body {
 .no-display {
   display: none;
 }
+
+@media (min-width: $width-tablet) {
+  body {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

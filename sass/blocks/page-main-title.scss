@@ -1,5 +1,5 @@
 .page-main-title {
-  height: 176px;
+  height: 108px;
   margin: 0;
   padding-top: 68px;
   font-size: 27px;
@@ -22,6 +22,8 @@
 
 @media (min-width: $width-tablet) {
   .page-main-title {
+    height: 128px;
+    padding-top: 94px;
     font-size: 43px;
     line-height: 50px;
 
@@ -44,5 +46,9 @@
   .page-main-title {
     font-size: 53px;
     line-height: 57px;
+
+    &:not(&--index) {
+      height: 157px;
+    }
   }
 }
