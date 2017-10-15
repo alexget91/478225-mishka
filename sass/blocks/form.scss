@@ -153,14 +153,13 @@
 
   .form__fieldset {
     box-sizing: border-box;
+    position: relative;
     padding-left: 167px;
     padding-top: 50px;
     padding-bottom: 30px;
     border-top: none;
 
     &--colors {
-      display: flex;
-      flex-wrap: wrap;
       padding-bottom: 26px;
     }
 
@@ -169,18 +168,26 @@
     }
 
     &--tel {
-      margin-bottom: -47px;
+      margin-bottom: -59px;
+      padding-top: 62px;
     }
 
     &--email {
       margin-bottom: 0;
+      padding-top: 62px;
       padding-bottom: 50px;
     }
   }
 
+  .form__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .form__legend {
-    margin-left: -167px;
-    margin-bottom: -147px;
+    position: absolute;
+    top: 69px;
+    left: 0;
   }
 
   .form__group {
@@ -225,18 +232,24 @@
     padding-right: 18px;
     font-size: 19px;
 
+    &--single {
+      padding-right: 60px;
+    }
+
     &:not(&--single) {
       margin-left: 25px;
     }
 
     &--textarea {
+      margin-top: 2px;
       padding-left: 16px;
       padding-right: 16px;
     }
   }
 
   .form__icon {
-    top: 52px;
+    top: 64px;
+    right: 22px;
   }
 
   .form__bottom {
@@ -245,7 +258,7 @@
 
   .form__hint {
     margin-left: auto;
-    margin-top: 2px;
+    margin-top: 8px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -259,5 +272,9 @@
 @media (min-width: $width-desktop) {
   .form__fieldset {
     padding-left: $padding-inner-desktop;
+  }
+
+  .form__legend {
+    left: 61px;
   }
 }
