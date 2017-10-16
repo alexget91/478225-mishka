@@ -1,4 +1,46 @@
 .basket-add__text {
-  margin: 0;
+  margin: 0 0 23px;
   line-height: 30px;
+}
+
+.basket-add__options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket-add__radio {
+  display: none;
+}
+
+.basket-add__item {
+  display: block;
+  width: 78px;
+  padding: 16px 0;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $border-color;
+
+  .basket-add__radio:checked + & {
+    border-color: $highlighted-color;
+  }
+}
+
+.basket-add__link {
+  margin-top: 31px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 16px;
+}
+
+@media (min-width: $width-tablet) {
+  .basket-add__title {
+    white-space: nowrap;
+  }
+
+  .basket-add__item {
+    width: 108px;
+  }
 }

@@ -3,10 +3,16 @@
 }
 
 .catalog__item {
-  margin-top: 30px;
+  margin-bottom: 30px;
 
-  &:first-child {
-    margin-top: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .catalog {
+    padding-top: 91px;
   }
 }
 
@@ -14,13 +20,10 @@
   .catalog {
     display: flex;
     justify-content: space-between;
+    padding-top: 131px;
   }
 
   .catalog__item {
     width: 315px;
-
-    &:first-child {
-      margin-top: 30px;
-    }
   }
 }

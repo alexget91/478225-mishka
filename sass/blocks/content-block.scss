@@ -1,7 +1,36 @@
 .content-block {
-  border-top: 2px solid $background-color;
+  position: relative;
 
-  &--top {
-    border-top: none;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5px;
+    background-repeat: repeat;
+    height: 20px;
+    background-size: 40px 20px;
+    background-image:
+      radial-gradient(circle at 11px -4px, transparent 12px, #ffffff 13px),
+      radial-gradient(circle at 11px -6px, transparent 12px, $background-color 13px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 40px 10px;
+    background-image:
+      radial-gradient(circle at 25px 15px, #ffffff 12px, transparent 13px),
+      radial-gradient(circle at 25px 13px, $background-color 12px, transparent 13px);
+    left: 6px;
+    right: 0;
+    top: 0;
+  }
+
+  &--top::before,
+  &--top::after {
+    background-image: none;
   }
 }
