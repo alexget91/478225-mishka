@@ -1,10 +1,16 @@
-.logo {
-  display: inline-block;
+.logo__image {
+  display: block;
 }
 
-.logo__image {
-  display: inline-block;
-  width: 86px;
-  height: 35px;
-  vertical-align: top;
+@media (min-width: $width-tablet) {
+  .logo__image:not(.logo__image--footer) {
+    width: 112px;
+    height: auto;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo__image:not(.logo__image--footer) {
+    width: 148px;
+  }
 }

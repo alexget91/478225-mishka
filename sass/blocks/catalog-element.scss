@@ -62,11 +62,11 @@
 @media (min-width: $width-tablet) {
   .catalog-element {
     display: flex;
-    flex-wrap: wrap;
   }
 
   .catalog-element__img-wrapper {
     height: 334px;
+    flex-shrink: 0;
   }
 
   .catalog-element__content {

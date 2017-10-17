@@ -31,8 +31,25 @@
 }
 
 .video__item {
+  display: flex;
+  height: 150px;
   margin-bottom: 23px;
   margin-left: -1px;
+  background: url("../img/video-mobile@1x.jpg") no-repeat;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 102px;
+    height: 78px;
+    margin: auto;
+    background: url("../img/icon-play.svg") no-repeat;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .video__text {
@@ -65,7 +82,13 @@
     height: 455px;
     margin-bottom: 0;
     order: -1;
+    background-image: url("../img/video-tablet@1x.jpg");
     border-bottom: 1px solid $border-color;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
   }
 
   .video__header {
@@ -117,10 +140,17 @@
 
   .video__item {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 682px;
+    height: 455px;
+    background-image: url("../img/video-desktop@1x.jpg");
     border-bottom: none;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 
   .video__btn {
