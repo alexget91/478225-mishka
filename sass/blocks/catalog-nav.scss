@@ -68,7 +68,14 @@
 @media (min-width: $width-tablet) {
   .catalog-nav {
     display: flex;
+    position: relative;
     margin: -120px auto 0;
+
+    &::after {
+      content: "";
+
+      @include wave-bg;
+    }
   }
 
   .catalog-nav__link {

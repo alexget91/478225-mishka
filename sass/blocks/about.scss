@@ -23,18 +23,41 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-.about__icon-wrapper {
-  width: 56px;
-  height: 38px;
-  margin-bottom: 15px;
-  margin-left: -6px;
-  text-align: center;
-}
+  &::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 38px;
+    margin-bottom: 15px;
+    margin-left: -6px;
+    text-align: center;
+    background: center center no-repeat;
+  }
 
-.about__icon {
-  fill: $highlighted-color;
+  &--eco::before {
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--price::before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--like::before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--knit::before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--rocket::before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $width-tablet) {

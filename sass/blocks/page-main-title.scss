@@ -12,6 +12,11 @@
   &--index {
     height: 214px;
     background: #fafafa url("../img/hero-mobile@1x.jpg") center -20px no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px auto;
+    }
   }
 }
 
@@ -22,14 +27,28 @@
 
 @media (min-width: $width-tablet) {
   .page-main-title {
-    height: 128px;
+    position: relative;
+    height: 132px;
     padding-top: 94px;
     font-size: 43px;
     line-height: 50px;
 
+    &::after {
+      content: "";
+
+      @include wave-bg;
+    }
+
     &--index {
-      height: 593px;
+      height: 594px;
       padding-top: 152px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-position-y: top;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 1150px auto;
+      }
     }
 
     & br {
@@ -48,7 +67,15 @@
     line-height: 57px;
 
     &:not(&--index) {
-      height: 157px;
+      height: 162px;
+    }
+
+    &--index {
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
     }
   }
 }
