@@ -23,4 +23,23 @@
     background: $highlighted-color;
     border: none;
   }
+
+  &:hover {
+    color: #ffffff;
+    background-color: $text-color;
+  }
+
+  &:focus {
+    color: #7c7c7c;
+    background-color: $text-color;
+  }
+
+  &--highlighted:hover {
+    background-color: $highlighted-hover-color;
+  }
+
+  &--highlighted:focus {
+    color: #8be2d0;
+    background-color: $highlighted-hover-color;
+  }
 }

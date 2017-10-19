@@ -1,3 +1,13 @@
+.catalog-element {
+  &:hover .catalog-element__content {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active .catalog-element__content {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
 .catalog-element__img-wrapper {
   display: block;
   height: 195px;
@@ -26,6 +36,14 @@
 .catalog-element__title-link {
   color: $heading-color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .catalog-element__desc {
@@ -51,12 +69,22 @@
 
 .catalog-element__basket-link {
   display: block;
-  width: 21px;
+  width: 20px;
   height: 19px;
   margin-left: auto;
-  font-size: 0;
-  text-decoration: none;
-  background: url("../img/icon-cart.svg") center center no-repeat;
+  cursor: pointer;
+  fill: #221f1f;
+  opacity: 0.2;
+
+  &:hover {
+    fill: $highlighted-color;
+    opacity: 1;
+  }
+
+  &:focus {
+    fill: $highlighted-color;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $width-tablet) {

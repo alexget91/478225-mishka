@@ -25,6 +25,12 @@
     background: $link-color;
   }
 
+  &:hover {
+    // height: 125px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
+
   &--toys:hover {
     background: $link-hover-color;
   }

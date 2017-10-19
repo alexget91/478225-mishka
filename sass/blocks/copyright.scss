@@ -4,20 +4,39 @@
   align-items: center;
 }
 
-.copyright__text {
-  margin-right: 30px;
+.copyright__link {
+  display: flex;
+  align-items: center;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
   color: $heading-color;
+  text-decoration: none;
+
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    fill: $link-hover-color;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link {
+.copyright__text {
+  margin: -7px 0 0;
+}
+
+.copyright__logo {
   display: inline-block;
   width: 27px;
   height: 34px;
-  font-size: 0;
-  text-decoration: none;
-  vertical-align: top;
-  background: url("../img/logo-htmlacademy.svg") center center no-repeat;
+  margin-left: 30px;
+  fill: $highlighted-color;
+}
+
+@media (min-width: $width-tablet) {
+  .copyright {
+    justify-content: flex-end;
+  }
 }

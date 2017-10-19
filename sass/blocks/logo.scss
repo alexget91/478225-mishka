@@ -1,5 +1,27 @@
+.logo {
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:focus .logo__image--footer {
+    fill: $link-hover-color;
+  }
+}
+
 .logo__image {
   display: block;
+
+  &--footer {
+    fill: #231f20;
+  }
+
+  &:hover:not(&--footer) {
+    opacity: 0.6;
+  }
+
+  &--footer:hover {
+    fill: $link-hover-color;
+  }
 }
 
 @media (min-width: $width-tablet) {
