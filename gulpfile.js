@@ -68,7 +68,8 @@ gulp.task("scripts", function(cb) {
     rename({
       extname: ".min.js"
     }),
-    gulp.dest("build")
+    gulp.dest("build"),
+    server.stream()
   ],
     cb
   );
@@ -109,6 +110,7 @@ gulp.task("serve", function() {
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html"]);
+  gulp.watch("js/**/*.js", ["scripts"]);
 });
 
 gulp.task("build", function(done) {

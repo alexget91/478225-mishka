@@ -86,6 +86,10 @@
   &--close {
     background-image: url("../img/icon-menu-close.svg");
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .page-header__extra {
@@ -102,6 +106,16 @@
 @media (max-width: $width-tablet) {
   .page-header__wrapper {
     width: $width-base;
+  }
+
+  .page-header__nav--closed,
+  .page-header__tools--closed {
+    display: none;
+  }
+
+  .page-header__nav--nojs,
+  .page-header__tools--nojs {
+    display: block;
   }
 }
 
