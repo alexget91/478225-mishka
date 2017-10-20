@@ -13,6 +13,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var run = require("run-sequence");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -55,6 +56,7 @@ gulp.task("sprite", function() {
 
 gulp.task("html", function() {
   return gulp.src("*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
     .pipe(server.stream());;
 });
