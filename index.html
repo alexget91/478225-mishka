@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="js/map-init.js" as="script">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <script src="js/svgxuse.min.js" defer></script>
@@ -25,10 +26,10 @@
         </div>
         <nav class="page-header__nav">
           <button class="page-header__toggle page-header__toggle--close" type="button">Открыть меню</button>
-          <a class="page-header__item page-header__item--nav" href="catalog.html" target="_blank">
+          <a class="page-header__item page-header__item--nav" href="catalog.html">
             <span class="page-header__text">Каталог товаров</span>
           </a>
-          <a class="page-header__item page-header__item--nav" href="form.html" target="_blank">
+          <a class="page-header__item page-header__item--nav" href="form.html">
             <span class="page-header__text">Вязание на заказ</span>
           </a>
         </nav>
@@ -148,7 +149,7 @@
             <div class="contacts__item contacts__item--name">адрес:</div>
             <div class="contacts__item contacts__item--text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</div>
           </div>
-          <div class="contacts__map"></div>
+          <div id="map" class="contacts__map"></div>
           <a href="#" class="contacts__write btn">Напишите нам</a>
         </div>
       </section>
@@ -217,5 +218,7 @@
       </div>
     </footer>
 
+    <script src="js/map-init.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsWS-rtoZ_yIYGtD7Dqt8suGePyzGXcU4&callback=mapInit" async defer></script>
   </body>
 </html>
