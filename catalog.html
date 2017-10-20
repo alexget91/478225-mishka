@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="preload" href="js/menu-toggle.min.js" as="script">
+    <link rel="preload" href="js/popup-toggle.min.js" as="script">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <script src="js/svgxuse.min.js" defer></script>
@@ -83,7 +84,7 @@
             <p class="catalog-element__desc">Рост 30 см, вес 200 г</p>
             <div class="catalog-element__options">
               <b class="catalog-element__price">1 200 руб.</b>
-              <svg class="catalog-element__basket-link" tabindex="0" aria-labelledby="title" width="20px" height="19px">
+              <svg class="catalog-element__basket-link js-popup-open" tabindex="0" aria-labelledby="title" width="20px" height="19px">
                 <title>Купить</title>
                 <use xlink:href="img/sprite.svg#sprite-icon-cart">
               </svg>
@@ -109,7 +110,7 @@
             <p class="catalog-element__desc">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-element__options">
               <b class="catalog-element__price">690 руб.</b>
-              <svg class="catalog-element__basket-link" tabindex="0" aria-labelledby="title" width="20px" height="19px">
+              <svg class="catalog-element__basket-link js-popup-open" tabindex="0" aria-labelledby="title" width="20px" height="19px">
                 <title>Купить</title>
                 <use xlink:href="img/sprite.svg#sprite-icon-cart">
               </svg>
@@ -135,7 +136,7 @@
             <p class="catalog-element__desc">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-element__options">
               <b class="catalog-element__price">1 500 руб.</b>
-              <svg class="catalog-element__basket-link" tabindex="0" aria-labelledby="title" width="20px" height="19px">
+              <svg class="catalog-element__basket-link js-popup-open" tabindex="0" aria-labelledby="title" width="20px" height="19px">
                 <title>Купить</title>
                 <use xlink:href="img/sprite.svg#sprite-icon-cart">
               </svg>
@@ -152,20 +153,23 @@
         </div>
       </section>
 
-      <section class="basket-add popup">
-        <h2 class="basket-add__title popup__title heading">Добавить в&nbsp;корзину</h2>
-        <form class="basket-add__form" name="basket_add" action="https://echo.htmlacademy.ru" method="post">
-          <p class="basket-add__text">Выберите размер:</p>
-          <div class="basket-add__options">
-            <input class="basket-add__radio" type="radio" name="size" value="S" id="size-s" checked>
-            <label class="basket-add__item" for="size-s">S</label>
-            <input class="basket-add__radio" type="radio" name="size" value="M" id="size-m">
-            <label class="basket-add__item" for="size-m">M</label>
-            <input class="basket-add__radio" type="radio" name="size" value="L" id="size-l">
-            <label class="basket-add__item" for="size-l">L</label>
-          </div>
-          <input type="submit" class="basket-add__link btn btn--submit btn--highlighted" value="Добавить">
-        </form>
+      <section class="basket-add popup popup--closed">
+        <div class="popup__inner">
+          <button class="popup__close" type="button">Закрыть окно</button>
+          <h2 class="basket-add__title popup__title heading">Добавить в&nbsp;корзину</h2>
+          <form class="basket-add__form" name="basket_add" action="https://echo.htmlacademy.ru" method="post">
+            <p class="basket-add__text">Выберите размер:</p>
+            <div class="basket-add__options">
+              <input class="basket-add__radio" type="radio" name="size" value="S" id="size-s" checked>
+              <label class="basket-add__item" for="size-s">S</label>
+              <input class="basket-add__radio" type="radio" name="size" value="M" id="size-m">
+              <label class="basket-add__item" for="size-m">M</label>
+              <input class="basket-add__radio" type="radio" name="size" value="L" id="size-l">
+              <label class="basket-add__item" for="size-l">L</label>
+            </div>
+            <input type="submit" class="basket-add__link btn btn--submit btn--highlighted" value="Добавить">
+          </form>
+        </div>
       </section>
 
     </main>
@@ -217,5 +221,6 @@
     </footer>
 
     <script src="js/menu-toggle.min.js"></script>
+    <script src="js/popup-toggle.min.js"></script>
   </body>
 </html>
