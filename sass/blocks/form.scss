@@ -97,6 +97,10 @@
   background: transparent;
   border: 2px solid #000000;
 
+  &::placeholder {
+    opacity: 0.3;
+  }
+
   &:not(&--textarea) {
     border-top: none;
     border-left: none;

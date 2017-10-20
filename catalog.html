@@ -2,9 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="js/menu-toggle.min.js" as="script">
+    <link rel="preload" href="js/popup-toggle.min.js" as="script">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <script src="js/svgxuse.min.js" defer></script>
@@ -14,8 +17,9 @@
 
     <header class="page-header">
       <div class="page-header__wrapper content-wrapper">
+        <button class="page-header__toggle page-header__toggle--nojs" type="button">Открыть меню</button>
         <div class="page-header__logo-wrap">
-          <a class="page-header__logo logo" href="#">
+          <a class="page-header__logo logo" href="/">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -23,16 +27,15 @@
             </picture>
           </a>
         </div>
-        <nav class="page-header__nav">
-          <button class="page-header__toggle page-header__toggle--close" type="button">Открыть меню</button>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
           <a class="page-header__item page-header__item--nav">
             <span class="page-header__text">Каталог товаров</span>
           </a>
-          <a class="page-header__item page-header__item--nav" href="form.html" target="_blank">
+          <a class="page-header__item page-header__item--nav" href="form.html">
             <span class="page-header__text">Вязание на заказ</span>
           </a>
         </nav>
-        <div class="page-header__tools">
+        <div class="page-header__tools page-header__tools--closed page-header__tools--nojs">
           <a class="page-header__item page-header__item--has-icon page-header__item--search" href="#">
             <svg class="page-header__icon" width="18px" height="18px">
               <use xlink:href="img/sprite.svg#sprite-icon-search">
@@ -81,10 +84,12 @@
             <p class="catalog-element__desc">Рост 30 см, вес 200 г</p>
             <div class="catalog-element__options">
               <b class="catalog-element__price">1 200 руб.</b>
-              <svg class="catalog-element__basket-link" tabindex="0" aria-labelledby="title" width="20px" height="19px">
-                <title>Купить</title>
-                <use xlink:href="img/sprite.svg#sprite-icon-cart">
-              </svg>
+              <button class="catalog-element__basket-link js-popup-open">
+                <svg class="catalog-element__icon" width="20px" height="19px">
+                  <use xlink:href="img/sprite.svg#sprite-icon-cart">
+                </svg>
+                Купить
+              </button>
             </div>
           </div>
         </article>
@@ -107,10 +112,12 @@
             <p class="catalog-element__desc">Диаметр 15 см, высота 10 см</p>
             <div class="catalog-element__options">
               <b class="catalog-element__price">690 руб.</b>
-              <svg class="catalog-element__basket-link" tabindex="0" aria-labelledby="title" width="20px" height="19px">
-                <title>Купить</title>
-                <use xlink:href="img/sprite.svg#sprite-icon-cart">
-              </svg>
+              <button class="catalog-element__basket-link js-popup-open">
+                <svg class="catalog-element__icon" width="20px" height="19px">
+                  <use xlink:href="img/sprite.svg#sprite-icon-cart">
+                </svg>
+                Купить
+              </button>
             </div>
           </div>
         </article>
@@ -133,10 +140,12 @@
             <p class="catalog-element__desc">Диаметр 30 см, высота 30 см</p>
             <div class="catalog-element__options">
               <b class="catalog-element__price">1 500 руб.</b>
-              <svg class="catalog-element__basket-link" tabindex="0" aria-labelledby="title" width="20px" height="19px">
-                <title>Купить</title>
-                <use xlink:href="img/sprite.svg#sprite-icon-cart">
-              </svg>
+              <button class="catalog-element__basket-link js-popup-open">
+                <svg class="catalog-element__icon" width="20px" height="19px">
+                  <use xlink:href="img/sprite.svg#sprite-icon-cart">
+                </svg>
+                Купить
+              </button>
             </div>
           </div>
         </article>
@@ -150,27 +159,30 @@
         </div>
       </section>
 
-      <section class="basket-add popup">
-        <h2 class="basket-add__title popup__title heading">Добавить в&nbsp;корзину</h2>
-        <form class="basket-add__form" name="basket_add" action="https://echo.htmlacademy.ru" method="post">
-          <p class="basket-add__text">Выберите размер:</p>
-          <div class="basket-add__options">
-            <input class="basket-add__radio" type="radio" name="size" value="S" id="size-s" checked>
-            <label class="basket-add__item" for="size-s">S</label>
-            <input class="basket-add__radio" type="radio" name="size" value="M" id="size-m">
-            <label class="basket-add__item" for="size-m">M</label>
-            <input class="basket-add__radio" type="radio" name="size" value="L" id="size-l">
-            <label class="basket-add__item" for="size-l">L</label>
-          </div>
-          <input type="submit" class="basket-add__link btn btn--submit btn--highlighted" value="Добавить">
-        </form>
+      <section class="basket-add popup popup--closed">
+        <div class="popup__inner">
+          <button class="popup__close" type="button">Закрыть окно</button>
+          <h2 class="basket-add__title popup__title heading">Добавить в&nbsp;корзину</h2>
+          <form class="basket-add__form" name="basket_add" action="https://echo.htmlacademy.ru" method="post">
+            <p class="basket-add__text">Выберите размер:</p>
+            <div class="basket-add__options">
+              <input class="basket-add__radio" type="radio" name="size" value="S" id="size-s" checked>
+              <label class="basket-add__item" for="size-s">S</label>
+              <input class="basket-add__radio" type="radio" name="size" value="M" id="size-m">
+              <label class="basket-add__item" for="size-m">M</label>
+              <input class="basket-add__radio" type="radio" name="size" value="L" id="size-l">
+              <label class="basket-add__item" for="size-l">L</label>
+            </div>
+            <input type="submit" class="basket-add__link btn btn--submit btn--highlighted" value="Добавить">
+          </form>
+        </div>
       </section>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper content-wrapper">
-        <a class="page-footer__logo logo" href="#">
+        <a class="page-footer__logo logo" href="/">
           <svg class="logo__image logo__image--footer" aria-labelledby="title" width="102px" height="34px">
             <title>Мишка</title>
             <use xlink:href="img/sprite.svg#sprite-logo-footer"></use>
@@ -214,5 +226,7 @@
       </div>
     </footer>
 
+    <script src="js/menu-toggle.min.js"></script>
+    <script src="js/popup-toggle.min.js"></script>
   </body>
 </html>
