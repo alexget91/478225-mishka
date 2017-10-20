@@ -1,6 +1,7 @@
 (function () {
   var popup = document.querySelector('.popup');
   var buttonClose = popup.querySelector('.popup__close');
+  var buttonsOpen = document.querySelectorAll('.js-popup-open');
 
   var popupOpen = function() {
     popup.classList.remove('popup--closed');
@@ -11,11 +12,11 @@
   }
 
 
-  [].forEach.call(document.querySelectorAll('.js-popup-open'), function (it) {
-    it.addEventListener('click', function() {
+  for (var i = 0; i < buttonsOpen.length; i++) {
+    buttonsOpen[i].addEventListener('click', function() {
       popupOpen();
     });
-  });
+  }
 
   popup.addEventListener('click', function(evt) {
     if (evt.target.classList.contains('popup')) {
