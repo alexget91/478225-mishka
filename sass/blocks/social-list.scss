@@ -6,24 +6,24 @@
 }
 
 .social-list__link {
-  display: block;
-  width: 24px;
-  height: 29px;
-  margin-left: 18px;
-  margin-right: 18px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-left: 14px;
+  margin-right: 14px;
   font-size: 0;
   text-decoration: none;
-  background: center center no-repeat;
 
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
+  &:hover .social-list__icon {
+    fill: $link-hover-color;
   }
 
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
+  &:focus .social-list__icon {
+    opacity: 0.3;
+    fill: $link-hover-color;
   }
+}
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-  }
+.social-list__icon {
+  margin: auto;
 }

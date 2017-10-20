@@ -6,6 +6,11 @@ body {
   color: $text-color;
 }
 
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
 .no-display {
   display: none;
 }
