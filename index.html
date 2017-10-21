@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsWS-rtoZ_yIYGtD7Dqt8suGePyzGXcU4&callback=mapInit" as="script">
     <link rel="preload" href="js/map-init.min.js" as="script">
     <link rel="preload" href="js/menu-toggle.min.js" as="script">
     <link rel="preload" href="js/popup-toggle.min.js" as="script">
@@ -110,7 +111,7 @@
             </picture>
           </a>
           <div class="featured__price">Цена: 990 руб.</div>
-          <a href="#" class="featured__order btn js-popup-open">Заказать</a>
+          <a class="featured__order btn js-popup-open" href="order.html">Заказать</a>
         </div>
       </section>
       <section class="about content-wrapper content-wrapper--index content-wrapper--bordered">
@@ -168,7 +169,7 @@
             <div class="contacts__item contacts__item--name">адрес:</div>
             <div class="contacts__item contacts__item--text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</div>
           </div>
-          <div id="map" class="contacts__map"></div>
+          <div id="map" class="contacts__map contacts__map--nojs"></div>
           <a href="#" class="contacts__write btn">Напишите нам</a>
         </div>
       </section>
