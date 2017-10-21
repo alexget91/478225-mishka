@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
   var blockNav = document.querySelector('.page-header__nav');
   var blockTools = document.querySelector('.page-header__tools');
