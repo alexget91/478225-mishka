@@ -15,6 +15,11 @@ textarea {
   display: none;
 }
 
+.visually-hidden {
+  height: 0;
+  font-size: 0;
+}
+
 @media (min-width: $width-tablet) {
   body {
     font-size: 17px;

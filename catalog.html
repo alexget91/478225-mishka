@@ -65,6 +65,7 @@
 
       <h1 class="page-main-title">Каталог товаров</h1>
       <section class="catalog content-wrapper">
+        <h2 class="catalog__title visually-hidden">Наши товары</h2>
         <article class="catalog__item catalog-element">
           <a class="catalog-element__img-wrapper" href="#">
             <picture>
@@ -74,7 +75,7 @@
 
               <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-              <img class="catalog-element__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x">
+              <img class="catalog-element__img" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
             </picture>
           </a>
           <div class="catalog-element__content">
@@ -102,7 +103,7 @@
 
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-              <img class="catalog-element__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x">
+              <img class="catalog-element__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
             </picture>
           </a>
           <div class="catalog-element__content">
@@ -130,7 +131,7 @@
 
               <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-              <img class="catalog-element__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x">
+              <img class="catalog-element__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
             </picture>
           </a>
           <div class="catalog-element__content">
@@ -183,32 +184,32 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper content-wrapper">
         <a class="page-footer__logo logo" href="/">
-          <svg class="logo__image logo__image--footer" aria-labelledby="title" width="102px" height="34px">
-            <title>Мишка</title>
+          <svg class="logo__image logo__image--footer" aria-labelledby="logo-footer" width="102px" height="34px">
+            <title id="logo-footer">Мишка</title>
             <use xlink:href="img/sprite.svg#sprite-logo-footer"></use>
           </svg>
         </a>
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" aria-labelledby="title" width="22px" height="21px">
-                <title>Мы в Инстаграме</title>
+              <svg class="social-list__icon" aria-labelledby="social-instagram" width="22px" height="21px">
+                <title id="social-instagram">Мы в Инстаграме</title>
                 <use xlink:href="img/sprite.svg#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" aria-labelledby="title" width="15px" height="28px">
-                <title>Мы в Фейсбуке</title>
+              <svg class="social-list__icon" aria-labelledby="social-facebook" width="15px" height="28px">
+                <title id="social-facebook">Мы в Фейсбуке</title>
                 <use xlink:href="img/sprite.svg#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" aria-labelledby="title" width="23px" height="20px">
-                <title>Мы в Твиттере</title>
+              <svg class="social-list__icon" aria-labelledby="social-twitter" width="23px" height="20px">
+                <title id="social-twitter">Мы в Твиттере</title>
                 <use xlink:href="img/sprite.svg#sprite-icon-twitter"></use>
               </svg>
             </a>
@@ -217,8 +218,8 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <p class="copyright__text">Разработано</p>
-            <svg class="copyright__logo" aria-labelledby="title" width="27px" height="34px">
-              <title>HTML Academy</title>
+            <svg class="copyright__logo" aria-labelledby="logo-htmlacademy" width="27px" height="34px">
+              <title id="logo-htmlacademy">HTML Academy</title>
               <use xlink:href="img/sprite.svg#sprite-logo-htmlacademy"></use>
             </svg>
           </a>
