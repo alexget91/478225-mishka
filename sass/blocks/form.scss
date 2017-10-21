@@ -64,6 +64,16 @@
     border: 2px solid $text-color;
   }
 
+  .form__radio:disabled + &,
+  .form__checkbox:disabled + & {
+    color: $disabled-color;
+  }
+
+  .form__radio:disabled + &::before,
+  .form__checkbox:disabled + &::before {
+    border-color: $disabled-color;
+  }
+
   .form__radio + &::before {
     height: 36px;
     border-radius: 50%;
@@ -140,6 +150,10 @@
   &:hover + .form__icon {
     opacity: 1;
     fill: $highlighted-color;
+  }
+
+  &:disabled {
+    border-color: $disabled-color;
   }
 }
 

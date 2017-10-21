@@ -27,8 +27,12 @@
     border-color: $highlighted-color;
   }
 
-  &:hover {
+  &:hover:not(&:disabled) {
     border-color: #c7c7c7;
+  }
+
+  .basket-add__radio:disabled + & {
+    color: $disabled-color;
   }
 }
 
