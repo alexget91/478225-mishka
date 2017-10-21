@@ -1,30 +1,33 @@
+'use strict';
+
 (function () {
   var popup = document.querySelector('.popup');
   var buttonClose = popup.querySelector('.popup__close');
   var buttonsOpen = document.querySelectorAll('.js-popup-open');
 
-  var popupOpen = function() {
+  var popupOpen = function () {
     popup.classList.remove('popup--closed');
   }
 
-  var popupClose = function() {
+  var popupClose = function () {
     popup.classList.add('popup--closed');
   }
 
 
   for (var i = 0; i < buttonsOpen.length; i++) {
-    buttonsOpen[i].addEventListener('click', function() {
+    buttonsOpen[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
       popupOpen();
     });
   }
 
-  popup.addEventListener('click', function(evt) {
+  popup.addEventListener('click', function (evt) {
     if (evt.target.classList.contains('popup')) {
       popupClose();
     }
   });
 
-  buttonClose.addEventListener('click', function() {
+  buttonClose.addEventListener('click', function () {
     popupClose();
   });
 })();

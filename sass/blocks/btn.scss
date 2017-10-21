@@ -24,7 +24,7 @@
     border: none;
   }
 
-  &:hover {
+  &:not(:disabled):hover {
     color: #ffffff;
     background-color: $text-color;
   }
@@ -34,12 +34,16 @@
     background-color: $text-color;
   }
 
-  &--highlighted:hover {
+  &--highlighted:not(:disabled):hover {
     background-color: $highlighted-hover-color;
   }
 
   &--highlighted:focus {
     color: #8be2d0;
     background-color: $highlighted-hover-color;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }

@@ -17,10 +17,11 @@
 }
 
 .video__title {
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
-  height: 95px;
+  min-height: 95px;
   margin: 0;
+  padding-top: 22px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -32,6 +33,7 @@
     width: 32px;
     height: 32px;
     margin-right: 25px;
+    margin-top: 7px;
     flex-shrink: 0;
     background: url("../img/icon-video.svg") center center no-repeat;
   }
@@ -116,7 +118,12 @@
 
   .video__title {
     margin-bottom: -3px;
+    padding-top: 37px;
     font-size: 20px;
+
+    &::before {
+      margin-top: -4px;
+    }
   }
 
   .video__text {
@@ -129,7 +136,6 @@
 @media (min-width: $width-desktop) {
   .video {
     box-sizing: border-box;
-    height: 455px;
     margin-top: 27px;
     margin-bottom: 105px;
     padding-top: 0;
@@ -139,7 +145,7 @@
   .video__inner {
     box-sizing: border-box;
     flex-direction: column;
-    height: 100%;
+    min-height: 455px;
     padding: 41px 58px 59px;
   }
 
@@ -148,10 +154,12 @@
     width: 220px;
     height: auto;
     margin-bottom: 33px;
+    padding-top: 0;
     align-items: flex-start;
 
     &::before {
-      margin-bottom: 12px;
+      margin-bottom: 20px;
+      margin-top: 0;
     }
   }
 

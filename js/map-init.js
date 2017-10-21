@@ -1,5 +1,8 @@
+'use strict';
+
 (function () {
   window.mapInit = function () {
+    document.querySelector('.contacts__map').classList.remove('.contacts__map--nojs');
     var uluru = {lat: 59.9387846, lng: 30.3232306};
     var image = 'img/icon-map-pin.svg';
     var map = new google.maps.Map(document.getElementById('map'), {
