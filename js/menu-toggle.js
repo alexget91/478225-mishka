@@ -1,11 +1,12 @@
-(function () {
-  var blockNav = document.querySelector('.page-header__nav');
-  var blockTools = document.querySelector('.page-header__tools');
-  var navToggle = document.querySelector('.page-header__toggle');
+'use strict';
 
-  blockNav.classList.remove('page-header__nav--nojs');
-  blockTools.classList.remove('page-header__tools--nojs');
-  navToggle.classList.remove('page-header__toggle--nojs');
+(function () {
+  var header = document.querySelector('.page-header');
+  var blockNav = header.querySelector('.page-header__nav');
+  var blockTools = header.querySelector('.page-header__tools');
+  var navToggle = header.querySelector('.page-header__toggle');
+
+  header.classList.remove('page-header--nojs');
 
   navToggle.addEventListener('click', function() {
     if (!navToggle.classList.contains('page-header__toggle--close')) {

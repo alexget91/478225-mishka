@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
   var popup = document.querySelector('.popup');
   var buttonClose = popup.querySelector('.popup__close');
