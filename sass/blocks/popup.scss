@@ -1,5 +1,6 @@
 .popup {
   display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -31,10 +32,10 @@
 
 .popup__close {
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 30px;
-  width: 21px;
-  height: 20px;
+  width: 22px;
+  height: 21px;
   font-size: 0;
   background: url("../img/icon-menu-close.svg") center center no-repeat;
   border: none;

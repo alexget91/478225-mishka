@@ -159,12 +159,13 @@
 
 .form__icon {
   position: absolute;
-  top: 19px;
+  bottom: 20px;
   right: 4px;
   opacity: 0.2;
   z-index: 5;
 
   &--tel {
+    bottom: 28px;
     right: 7px;
   }
 }
@@ -295,8 +296,12 @@
   }
 
   .form__icon {
-    top: 62px;
+    bottom: 58px;
     right: 22px;
+
+    &--tel {
+      bottom: 48px;
+    }
   }
 
   .form__bottom {
