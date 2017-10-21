@@ -86,10 +86,6 @@
   &--close {
     background-image: url("../img/icon-menu-close.svg");
   }
-
-  &--nojs {
-    display: none;
-  }
 }
 
 .page-header__extra {
@@ -104,8 +100,23 @@
 }
 
 @media (max-width: $width-tablet) {
+  .page-header:not(.page-header--nojs) {
+    position: relative;
+    height: 79px;
+    z-index: 10;
+  }
+
   .page-header__wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
     width: $width-base;
+    margin-left: -$width-base / 2;
+    background-color: #ffffff;
+  }
+
+  .page-header__item:last-child {
+    border-bottom: 1px solid $border-color;
   }
 
   .page-header__nav--closed,
@@ -113,9 +124,20 @@
     display: none;
   }
 
-  .page-header__nav--nojs,
-  .page-header__tools--nojs {
-    display: block;
+  .page-header--nojs {
+    .page-header__wrapper {
+      position: static;
+      margin-left: auto;
+    }
+
+    .page-header__nav,
+    .page-header__tools {
+      display: block;
+    }
+
+    .page-header__toggle {
+      display: none;
+    }
   }
 }
 
