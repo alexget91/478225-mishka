@@ -88,7 +88,8 @@ gulp.task('copy', function(done) {
       'img/**',
       '!img/**/sprite-*.svg',
       '!img/**/htmlacademy.svg',
-      'js/**/*.min.*'
+      'js/**/*.min.*',
+      '!**/README'
     ], {
       base: '.'
     })
