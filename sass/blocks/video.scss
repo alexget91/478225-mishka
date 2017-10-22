@@ -1,5 +1,5 @@
 .video {
-  margin-top: 30px;
+  margin-top: 31px;
   margin-bottom: 58px;
 
   &:hover .video__inner {
@@ -21,7 +21,7 @@
   display: flex;
   min-height: 95px;
   margin: 0;
-  padding-top: 22px;
+  padding-top: 23px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -42,7 +42,7 @@
 .video__item {
   display: flex;
   height: 150px;
-  margin: 0 -35px 23px;
+  margin: 0 -35px 27px;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
   cursor: pointer;
 
@@ -123,10 +123,12 @@
 
     &::before {
       margin-top: -4px;
+      margin-right: 31px;
     }
   }
 
   .video__text {
+    margin-top: 2px;
     margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
@@ -136,7 +138,7 @@
 @media (min-width: $width-desktop) {
   .video {
     box-sizing: border-box;
-    margin-top: 27px;
+    margin-top: 3px;
     margin-bottom: 105px;
     padding-top: 0;
     padding-left: 682px;
@@ -146,7 +148,7 @@
     box-sizing: border-box;
     flex-direction: column;
     min-height: 455px;
-    padding: 41px 58px 59px;
+    padding: 41px 57px 59px 77px;
   }
 
   .video__title {
@@ -158,8 +160,9 @@
     align-items: flex-start;
 
     &::before {
-      margin-bottom: 20px;
       margin-top: 0;
+      margin-bottom: 20px;
+      margin-left: 2px;
     }
   }
 

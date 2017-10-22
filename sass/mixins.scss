@@ -11,10 +11,11 @@
   width: 100%;
   height: 24px;
   background: url("../img/bg-zigzag-fill.svg") top center repeat-x;
-  background-size: auto 100%;
+  background-size: $width-tablet 100%;
 
   @media (min-width: $width-desktop) {
     bottom: -15px;
     height: 34px;
+    background-size: 1150px 100%;
   }
 }

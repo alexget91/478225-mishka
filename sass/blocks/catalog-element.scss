@@ -47,7 +47,7 @@
 }
 
 .catalog-element__desc {
-  margin: 0 0 10px;
+  margin: 0 0 19px;
   font-size: 13px;
   line-height: 30px;
 }
@@ -55,8 +55,10 @@
 .catalog-element__options {
   display: flex;
   align-items: center;
-  height: 72px;
+  height: 66px;
   margin-top: auto;
+  padding-left: 2px;
+  padding-bottom: 6px;
   border-top: 1px solid $border-color;
 }
 
@@ -102,11 +104,14 @@
   }
 
   .catalog-element__content {
+    box-sizing: border-box;
     flex-grow: 1;
+    max-width: 333px;
     height: auto;
   }
 
   .catalog-element__title {
+    margin-top: 24px;
     font-size: 20px;
   }
 
@@ -115,7 +120,9 @@
   }
 
   .catalog-element__options {
+    height: 66px;
     margin-top: auto;
+    padding: 0 6px 6px;
   }
 
   .catalog-element__price {
@@ -135,5 +142,14 @@
 
   .catalog-element__content {
     min-height: 195px;
+    max-width: auto;
+  }
+
+  .catalog-element__desc {
+    margin-bottom: 14px;
+  }
+
+  .catalog-element__options {
+    padding: 0 7px 6px 0;
   }
 }

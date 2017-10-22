@@ -74,7 +74,7 @@
 
 .page-header__toggle {
   position: absolute;
-  top: 30px;
+  top: 29px;
   right: 30px;
   width: 21px;
   height: 20px;
@@ -115,7 +115,7 @@
     background-color: #ffffff;
   }
 
-  .page-header__item:last-child {
+  .page-header__item--basket {
     border-bottom: 1px solid $border-color;
   }
 

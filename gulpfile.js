@@ -16,6 +16,8 @@ var del = require('del');
 var htmlmin = require('gulp-htmlmin');
 var pump = require('pump');
 var uglify = require('gulp-uglify');
+var posthtml = require('gulp-posthtml');
+var include = require('posthtml-include');
 
 gulp.task('style', function() {
   gulp.src('sass/style.scss')
@@ -77,6 +79,9 @@ gulp.task('scripts', function(cb) {
 
 gulp.task('html', function() {
   return gulp.src('*.html')
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'))
     .pipe(server.stream());

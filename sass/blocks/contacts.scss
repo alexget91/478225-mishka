@@ -5,12 +5,12 @@
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .contacts__row {
   display: flex;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .contacts__item {
@@ -87,15 +87,15 @@
 @media (min-width: $width-tablet) {
   .contacts {
     position: relative;
-    padding-top: 76px;
+    padding-top: 77px;
     padding-bottom: 57px;
 
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: 62px;
-      right: 3px;
+      top: 63px;
+      right: 1px;
       width: 49px;
       height: 81px;
       background: url("../img/icon-flag.svg") no-repeat;
@@ -104,6 +104,7 @@
 
   .contacts__title {
     margin-bottom: 48px;
+    margin-left: -4px;
   }
 
   .contacts__content {
@@ -148,14 +149,18 @@
     padding-bottom: 105px;
 
     &::before {
-      left: 50px;
+      left: 63px;
       right: auto;
-      top: 156px;
+      top: 154px;
+    }
+
+    &::after {
+      top: -2px;
     }
   }
 
   .contacts__content {
-    min-height: 283px;
+    min-height: 281px;
     flex-direction: column;
   }
 
@@ -165,8 +170,8 @@
 
   .contacts__map {
     position: absolute;
-    top: 94px;
-    right: 0;
+    top: 92px;
+    right: 1px;
     width: $content-width-desktop / 2;
     margin-left: 0;
     margin-top: 0;
@@ -184,5 +189,7 @@
 
   .contacts__write {
     margin-top: auto;
+    margin-left: 0;
+    padding-right: 38px;
   }
 }

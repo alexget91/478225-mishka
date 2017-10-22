@@ -5,6 +5,7 @@
 
   &--fio {
     padding-top: 29px;
+    padding-bottom: 8px;
   }
 
   &--single {
@@ -35,6 +36,10 @@
 
   &--color {
     margin-bottom: 22px;
+  }
+
+  &--fio {
+    margin-bottom: 23px;
   }
 }
 
@@ -101,7 +106,7 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 1px;
-  padding: 12px 0 14px;
+  padding: 12px 0;
   font-size: 17px;
   line-height: 24px;
   background: transparent;
@@ -119,6 +124,7 @@
 
   &--single {
     margin-top: 0;
+    padding-bottom: 13px;
   }
 
   &--tel {
@@ -137,8 +143,9 @@
   }
 
   &--textarea {
-    height: 142px;
-    padding: 10px 16px 14px;
+    min-height: 142px;
+    padding: 13px 16px 14px;
+    line-height: 18px;
     resize: vertical;
   }
 
@@ -182,7 +189,8 @@
 }
 
 .form__submit {
-  margin-top: 30px;
+  margin-top: 31px;
+  padding: 16px 46px 16px 45px;
   line-height: 16px;
   cursor: pointer;
 }
@@ -200,26 +208,27 @@
     position: relative;
     padding-left: 167px;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
     border-top: none;
 
     &--colors {
-      padding-bottom: 26px;
+      padding-top: 51px;
+      padding-bottom: 25px;
     }
 
     &--fio {
-      padding-bottom: 27px;
+      padding-bottom: 26px;
     }
 
     &--tel {
-      margin-bottom: -58px;
-      padding-top: 62px;
+      margin-bottom: -56px;
+      padding-top: 61px;
     }
 
     &--email {
       margin-bottom: 0;
-      padding-top: 62px;
-      padding-bottom: 48px;
+      padding-top: 64px;
+      padding-bottom: 49px;
     }
   }
 
@@ -238,13 +247,17 @@
     margin-bottom: 24px;
 
     &--color {
-      width: 240px;
+      width: 252px;
+      margin-bottom: 24px;
       padding-right: 10px;
+    }
+
+    &--color:nth-child(2n) {
+      width: 225px;
     }
 
     &--fio {
       display: flex;
-      margin-bottom: 23px;
     }
   }
 
@@ -274,8 +287,7 @@
   }
 
   .form__field {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding: 12px 18px 13px;
     font-size: 19px;
 
     &--single {
@@ -288,8 +300,7 @@
     }
 
     &--textarea {
-      margin-top: 2px;
-      padding-top: 9px;
+      padding-top: 12px;
       padding-left: 16px;
       padding-right: 16px;
     }
@@ -297,15 +308,17 @@
 
   .form__icon {
     bottom: 58px;
-    right: 22px;
+    right: 21px;
 
     &--tel {
-      bottom: 48px;
+      bottom: 45px;
+      right: 25px;
     }
   }
 
   .form__bottom {
     display: flex;
+    margin-top: 23px;
   }
 
   .form__hint {
@@ -317,6 +330,8 @@
 
   .form__submit {
     margin-top: 0;
+    padding-left: 31px;
+    padding-right: 30px;
     order: -1;
     align-self: flex-start;
   }
@@ -325,9 +340,46 @@
 @media (min-width: $width-desktop) {
   .form__fieldset {
     padding-left: $padding-inner-desktop;
+    padding-right: $padding-inner-desktop;
+    padding-bottom: 26px;
+
+    &--colors {
+      padding-right: 0;
+      padding-bottom: 25px;
+    }
+
+    &--email {
+      padding-bottom: 49px;
+    }
+  }
+
+  .form__group--color:nth-child(2n) {
+    width: 252px;
   }
 
   .form__legend {
     left: 61px;
+  }
+
+  .form__field--email {
+    padding-bottom: 14px;
+  }
+
+  .form__icon {
+    bottom: 59px;
+    right: 177px;
+
+    &--tel {
+      bottom: 43px;
+      right: 182px;
+    }
+  }
+
+  .form__bottom {
+    margin-top: -1px;
+  }
+
+  .form__submit {
+    padding-right: 29px;
   }
 }
