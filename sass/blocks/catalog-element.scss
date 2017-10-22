@@ -104,7 +104,9 @@
   }
 
   .catalog-element__content {
+    box-sizing: border-box;
     flex-grow: 1;
+    max-width: 333px;
     height: auto;
   }
 
@@ -140,6 +142,7 @@
 
   .catalog-element__content {
     min-height: 195px;
+    max-width: auto;
   }
 
   .catalog-element__desc {
