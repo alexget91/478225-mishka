@@ -1,7 +1,7 @@
 .catalog-nav__link {
   display: flex;
   min-height: 63px;
-  padding: 20px $padding-side-base;
+  padding: 20px 30px 20px 29px;
   align-items: center;
   font-size: 19px;
   line-height: 24px;
@@ -69,6 +69,8 @@
 }
 
 .catalog-nav__text {
+  position: relative;
+  top: -3px;
   width: 170px;
 }
 
@@ -92,7 +94,30 @@
   }
 
   .catalog-nav__link {
+    box-sizing: border-box;
     width: 50%;
-    min-height: 80px;
+    min-height: 120px;
+    padding-left: 35px;
+    flex-shrink: 0;
+
+    &--toys {
+      padding-right: 37px;
+    }
+  }
+
+  .catalog-nav__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog-nav__link {
+    padding-left: 36px;
+  }
+
+  .catalog-nav::after {
+    bottom: -16px;
+    background-size: 1250px 100%;
   }
 }

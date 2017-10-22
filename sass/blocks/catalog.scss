@@ -12,7 +12,11 @@
 
 @media (min-width: $width-tablet) {
   .catalog {
-    padding-top: 76px;
+    padding-top: 78px;
+  }
+
+  .catalog__item {
+    margin-bottom: 54px;
   }
 }
 

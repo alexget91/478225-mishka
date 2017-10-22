@@ -1,5 +1,5 @@
 .about {
-  padding-top: 35px;
+  padding-top: 34px;
   padding-bottom: 31px;
 }
 
@@ -25,45 +25,74 @@
   }
 
   &::before {
+    position: relative;
     content: "";
     display: block;
-    width: 56px;
-    height: 38px;
-    margin-bottom: 15px;
-    margin-left: -6px;
     text-align: center;
-    background: center center no-repeat;
+    background: no-repeat;
   }
 
   &--eco::before {
+    top: 2px;
+    width: 32px;
+    height: 40px;
+    margin-left: 8px;
+    margin-bottom: 15px;
     background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--price::before {
+    width: 47px;
+    height: 27px;
+    margin-bottom: 26px;
     background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like::before {
+    top: 5px;
+    width: 33px;
+    height: 28px;
+    margin-left: 8px;
+    margin-bottom: 26px;
     background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--knit::before {
+    top: 2px;
+    width: 34px;
+    height: 34px;
+    margin-left: 3px;
+    margin-bottom: 18px;
     background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--rocket::before {
+    top: 4px;
+    width: 54px;
+    height: 23px;
+    margin-left: -6px;
+    margin-bottom: 30px;
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--gift::before {
+    top: 2px;
+    width: 33px;
+    height: 32px;
+    margin-left: 3px;
+    margin-bottom: 21px;
     background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
 @media (min-width: $width-tablet) {
   .about {
-    padding-top: 58px;
+    padding-top: 64px;
     padding-bottom: 26px;
+  }
+
+  .about__title {
+    margin-left: -4px;
   }
 
   .about__list {
@@ -102,13 +131,23 @@
     &--gift {
       order: 6;
     }
+
+    &--eco::before {
+      top: 0;
+      margin-left: 9px;
+      margin-bottom: 13px;
+    }
+
+    &--knit::before {
+      top: 3px;
+    }
   }
 }
 
 @media (min-width: $width-desktop) {
   .about {
     padding-top: 83px;
-    padding-bottom: 33px;
+    padding-bottom: 34px;
   }
 
   .about__list {
@@ -117,5 +156,11 @@
 
   .about__item {
     width: 350px;
+    margin-bottom: 39px;
+
+    &--eco::before {
+      top: -2px;
+      margin-bottom: 11px;
+    }
   }
 }

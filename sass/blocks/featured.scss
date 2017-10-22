@@ -10,6 +10,7 @@
 .featured__title {
   margin-top: 0;
   margin-bottom: 5px;
+  margin-left: 1px;
 }
 
 .featured__label {
@@ -38,14 +39,14 @@
 }
 
 .featured__parameter {
-  width: 90px;
+  width: 98px;
 }
 
 .featured__item {
   display: block;
   width: 260px;
   height: 315px;
-  margin: 28px auto 0;
+  margin: 29px auto 0;
 }
 
 .featured__image {
@@ -79,11 +80,12 @@
 
   .featured__title {
     margin-bottom: 0;
+    margin-left: -3px;
   }
 
   .featured__label {
-    width: 120px;
-    margin-top: 6px;
+    width: 126px;
+    margin-top: 9px;
     margin-left: auto;
     line-height: 17px;
     text-align: center;
@@ -110,8 +112,8 @@
   .featured__item {
     position: absolute;
     top: 9px;
-    right: 0;
-    width: 334px;
+    right: 1px;
+    width: 333px;
     height: 404px;
     margin: 0;
   }
@@ -131,6 +133,7 @@
 
   .featured__header {
     margin-left: -$padding-inner-desktop;
+    margin-bottom: 46px;
   }
 
   .featured__title {
@@ -141,17 +144,18 @@
   .featured__label {
     box-sizing: border-box;
     position: relative;
-    left: -4px;
+    left: -5px;
     width: $padding-inner-desktop;
     margin-left: 0;
+    margin-top: 4px;
     padding: 0 30px;
     order: -1;
   }
 
   .featured__content {
     position: relative;
-    min-height: 475px;
-    padding-right: $content-width-desktop / 2 + 50px;
+    min-height: 479px;
+    padding-right: $content-width-desktop / 2 + 58px;
   }
 
   .featured__options {
@@ -159,7 +163,7 @@
   }
 
   .featured__item {
-    top: -161px;
+    top: -157px;
     right: 0;
     width: 525px;
     height: 636px;
