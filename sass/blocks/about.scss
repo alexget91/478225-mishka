@@ -68,18 +68,40 @@
 
   .about__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 465px;
     margin-top: 50px;
   }
 
   .about__item {
     width: 334px;
-    height: 115px;
+    min-height: 115px;
     margin-bottom: 40px;
     font-size: 20px;
     line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--knit {
+      order: 2;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--gift {
+      order: 6;
+    }
   }
 }
 

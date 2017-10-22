@@ -1,7 +1,7 @@
 .catalog-nav__link {
   display: flex;
-  height: 103px;
-  padding: 0 $padding-side-base;
+  min-height: 63px;
+  padding: 20px $padding-side-base;
   align-items: center;
   font-size: 19px;
   line-height: 24px;
@@ -44,7 +44,7 @@
 
   &:hover {
     margin-top: -5px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
   }
 
   &--toys:hover {
@@ -93,6 +93,6 @@
 
   .catalog-nav__link {
     width: 50%;
-    height: 120px;
+    min-height: 80px;
   }
 }
